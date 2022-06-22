@@ -9,14 +9,14 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="nambar">
+    <nav class="navbar">
       <h1 class="logo">ADVENTURE</h1>
-      <ul class="nav-link">
-        <li class="active"><a href="#<"></a>Home</li>
-        <li><a href="#<"></a>Tours</li>
-        <li><a href="#<"></a>Explore</li>
-        <li><a href="#<"></a>About</li>
-        <li class="ctn"><a href="#<"></a>Contact</li>
+      <ul class="nav-links">
+        <li class="active"><a href="#"></a>Home</li>
+        <li><a href="#"></a>Tours</li>
+        <li><a href="#"></a>Explore</li>
+        <li><a href="#"></a>About</li>
+        <li class="ctn"><a href="#"></a>Contact</li>
       </ul>
       <img src="./img/menu-btn.png" alt="" class="menu-btn" />
     </nav>
@@ -29,5 +29,86 @@
         <a href="#" class="ctn">Learn More</a>
       </div>
     </header>
+
+    <!-- Events -->
+    <section class="events">
+      <div class="title">
+        <h1>Upcoming Events</h1>
+        <div class="line"></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="./img/img1.png" />
+          <h4>Everst Camp Trek</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            itaque, dicta deserunt eveniet ducimus veniam?
+          </p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
+        <div class="col">
+          <img src="./img/img2.png" />
+          <h4>Walking Holidays</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            itaque, dicta deserunt eveniet ducimus veniam?
+          </p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore">
+      <div class="explore-content">
+        <h1>EXPLORE THE WORLD</h1>
+        <div class="line"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quo
+          autem quidem consectetur accusamus nostrum.
+        </p>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+    </section>
+
+    <section class="tours">
+      <div class="row">
+        <div class="col content-col">
+          <h1>UPCOMING TOURS & DESTINATION</h1>
+          <a href="#" class="line"></a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+            laudantium, nesciunt ab voluptas exercitationem at modi eveniet nisi
+            sequi natus eligendi perspiciatis aperiam pariatur odit, totam
+            aspernatur distinctio asperiores accusamus!
+          </p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
+        <div class="col image-col">
+          <div class="image-galery">
+            <img class="imgg" src="./img/img3.png" alt="" />
+            <img class="imgg" src="./img/img4.png" alt="" />
+            <img class="imgg" src="./img/img5.png" alt="" />
+            <img class="imgg" src="./img/img6.png " alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <p>
+        123 Fifth Avenue, NY 10160,New York,USA |
+        Phone:800-122-345|Email:contact@examle.com
+      </p>
+      <p>Copyright|2022 Outdoor Adventure</p>
+    </section>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-menu");
+      });
+    </script>
   </body>
 </html>
